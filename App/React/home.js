@@ -1,11 +1,15 @@
 "use strict";
 
-let test = "Moinesn";
+//let test = "Moinesn";
 
-// function App() {
-//   return <h1>Moinsen</h1>;
-// }
+function App() {
+  return React.createElement(
+    "h1",
+    null,
+    "Ja leck mich doch Fett!"
+  );
+}
 
-const domContainer = document.querySelector("#home");
-const root = ReactDOM.createRoot(domContainer);
-root.render(test);
+var domContainer = document.querySelector("#home");
+var root = ReactDOM.createRoot(domContainer);
+root.render(App());

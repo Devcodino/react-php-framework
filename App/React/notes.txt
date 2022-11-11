@@ -1,0 +1,29 @@
+Babel Codecompiler installieren.
+ACHTUNG: Node.js muss global installiert sein!
+
+1. "npm init -y" im Hauptverzeichnis der gesamten Webseite im Terminal ausführen. Beispiel in diesem Projekt React-PHP-Test.
+2. npm install babel-cli@6 babel-preset-react-app@3 im selben Ordner ausführen
+
+Fertig Babel ist installiert
+
+
+Babel nutzen
+
+1. Einen Ordner React im App Ordner erstellen, falls dieser noch nicht vorhanden ist.
+2. Im Terminal zu diesem Ordner navigieren
+3. Einen Order src im React Ordner erstellen
+4. Im Terminal im Ordner React folgenden Command ausführen: "npx babel --watch src --out-dir . --presets react-app/prod"
+
+//ACHTUNG: Dieser Command muss ausgeführt werden, wenn die App Live geht! 
+
+Babel überwacht nun den src Ordner. 
+
+5. Einen .js File im Ordner src erstellen.
+
+Der File wird von Bable im React Ordner noch einmal erstellt, mit dem Unterschied, dass der Reactcode von der .js im src Ordner umgewandelt wurde zu browserfreundlichem Code.
+
+Das bedeutet, dass wir nun die JSX Syntax auch im Browser verwenden können.
+
+6. Jetzt muss dieser File nur noch in den PHP View eingebunden werden. Ganz unten kurz bervor der Footer beginnt.
+
+Wenn wir Function Components benutzen wollen, müssen wir diese ebeno in den jeweiligen View einbinden. Oberhalb des Hauptfiles da JS auch von oben nach Unten läuft. 
