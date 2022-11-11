@@ -14,7 +14,7 @@ Babel nutzen
 3. Einen Order src im React Ordner erstellen
 4. Im Terminal im Ordner React folgenden Command ausführen: "npx babel --watch src --out-dir . --presets react-app/prod"
 
-//ACHTUNG: Dieser Command muss ausgeführt werden, wenn die App Live geht! 
+//ACHTUNG: Dieser Commands muss immer ausgeführt werden, wenn wir Änderungen an den Files im src Order durchführen. Beim normalen Betrieb der Webseite muss Babel nicht laufen wenn keine Änderungen gemacht wurden, da die Codes bereits compiled worden sind.
 
 Babel überwacht nun den src Ordner. 
 

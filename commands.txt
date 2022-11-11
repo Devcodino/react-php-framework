@@ -1,0 +1,3 @@
+---Bable Starten
+   Im Terminal im Ordner React folgenden Command ausführen: "npx babel --watch src --out-dir . --presets react-app/prod"
+   ACHTUNG: Muss nur ausgeführt werden, wenn Änderungen im React/src Ordner ausgeführt werden.
